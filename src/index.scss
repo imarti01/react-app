@@ -1,0 +1,13 @@
+@import "./scss/theme/variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bg-color;
+  font-family: $main-font;
+  color: $dark-color;
+}

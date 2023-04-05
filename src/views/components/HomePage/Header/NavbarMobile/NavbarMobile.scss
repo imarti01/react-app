@@ -1,0 +1,16 @@
+@import "../../../../../scss/theme/variables.scss";
+
+.navbar-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 4rem;
+    border-bottom: 1px solid $dark-color;
+
+    &__title {
+        font-family: $logo-font;
+        font-size: 2.3rem;
+        padding-top: 1rem;
+    }
+}

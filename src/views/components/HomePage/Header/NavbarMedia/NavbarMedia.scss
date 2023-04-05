@@ -1,0 +1,14 @@
+@import "../../../../../scss/theme/variables.scss";
+
+.navbar-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 100%;
+    background-color: $nav-color;
+
+    &__link {
+        margin: 0rem 0.5rem;
+    }
+}
