@@ -1,20 +1,23 @@
 @import "../../../../scss/theme/variables";
+@import "../../../../scss/theme/breakpoints";
 @import "../../../../scss/styles/mixins";
 
 .inspire-container {
     @include flexColCenter(space-between);
     width: 100%;
-    height: 54rem;
+    height: 47rem;
 
     &__text {
         padding-top: 1rem;
     }
 
     &__show-more {
+        @include flexRowCenter();
         background-color: $nav-color;
         padding: 0.5rem 1rem;
         border-radius: 0.4rem;
-        margin-bottom: 10rem
+        margin-bottom: 3rem;
+        text-align: center;
     }
 
 }

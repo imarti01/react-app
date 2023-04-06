@@ -1,4 +1,5 @@
 @import "./scss/theme/variables";
+@import "./scss/styles/mixins";
 
 * {
   margin: 0;
@@ -11,3 +12,5 @@ body {
   font-family: $main-font;
   color: $dark-color;
 }
+
+@include scrollbar($nav-color, $bg-color)

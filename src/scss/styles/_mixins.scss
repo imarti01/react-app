@@ -1,3 +1,19 @@
+@mixin scrollbar ($colorBar, $colorBg) {
+    ::-webkit-scrollbar {
+        width: 0.3rem; 
+      }
+      
+    ::-webkit-scrollbar-track {
+       background: $colorBg;
+     }
+      
+     ::-webkit-scrollbar-thumb {
+       background: $colorBar;
+       border-radius: 1rem;
+     }
+      
+}
+
 @mixin inputSearchCancelBtn () {
     input[type="search"]::-webkit-search-cancel-button {
         -webkit-appearance: none;
@@ -9,7 +25,12 @@
     }
 }
 
-@mixin resetStyleslink () {
+@mixin resetStyleslink ($font-color) {
+
+    a {
+        color: $font-color;
+    }
+
     a:link, a:visited, a:active {
         text-decoration: none;
     }

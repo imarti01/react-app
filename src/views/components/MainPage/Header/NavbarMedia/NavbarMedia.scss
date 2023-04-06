@@ -4,19 +4,18 @@
 
 .navbar-media {
     @include flexRowCenter(center);
-    height: 2rem;
+    height: 2.7rem;
     width: 100%;
     background-color: $nav-color;
     @include md {
-        height: 2.5rem;
         justify-content: space-between;
+        padding: 0 10%;
     }
 
     &__search {
         @include flexRowCenter();
-        width: 8.8rem;
-        padding: 0 1rem;
-        
+        width: 7rem;
+       
         &--text {
             font-size: 0.7rem;
         }
@@ -24,9 +23,7 @@
     
     &__links {
         @include flexRowCenter();
-        width: 5rem;
-        padding: 0 1rem;
+        width: 3rem;
     }
-
 
 }

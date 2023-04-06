@@ -1,10 +1,36 @@
 import { createBrowserRouter } from "react-router-dom";
-import { HomePage, DashboardPage, ErrorPage, DetailPage } from "../views/pages";
+import { MainPage, DashboardPage, ErrorPage, DetailPage } from "../views/pages";
+import {
+  AllRecipesContainer,
+  MainContainer,
+} from "../views/components/MainPage";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage />,
+    element: <MainPage />,
+    children: [
+      {
+        path: "/",
+        element: <MainContainer />,
+      },
+      {
+        path: "allRecipes",
+        element: <AllRecipesContainer />,
+      },
+      {
+        path: "allRecipes/:filter",
+        // element: < />,
+      },
+      // {
+      //   path: "likelibrary",
+      //   element: <ContainerLikeLibrary />,
+      // },
+      // {
+      //   path: "nowplaying",
+      //   element: <NowPlaying />,
+      // },
+    ],
   },
   {
     path: "/dashboard",

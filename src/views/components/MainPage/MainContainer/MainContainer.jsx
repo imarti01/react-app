@@ -1,4 +1,4 @@
-import { InspireContainer } from "../";
+import { InspireContainer } from "../InspireContainer/InspireContainer";
 
 import "./MainContainer.scss";
 

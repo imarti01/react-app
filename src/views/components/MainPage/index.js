@@ -1,3 +1,4 @@
+export * from "./AllRecipesContainer/AllRecipesContainer";
 export * from "./CarouselRecipes/CarouselRecipes";
 export * from "./Header/HeaderContainer/HeaderContainer";
 export * from "./Header/ListElement/ListElement";
