@@ -1,9 +1,8 @@
-@import "../../../../scss/theme/variables.scss";
+@import "../../../../scss/theme/variables";
+@import "../../../../scss/styles/mixins";
 
 .carousel-recipes {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flexRowCenter();
     width: 100%;
     padding: 0rem 1rem;
 
@@ -12,9 +11,7 @@
     }
 
     &__card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flexColCenter();
         width: 80%;
         height: 34rem;
         text-align: center;
@@ -30,7 +27,6 @@
                 height: 30rem;
                 filter: saturate(0.5);
             }
-
         }
        
         h4 {

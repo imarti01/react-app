@@ -1,0 +1,6 @@
+@import "../../../../../scss/theme/variables";
+@import "../../../../../scss/styles/mixins";
+
+.navbar-desktop {
+    @include flexRowCenter();
+}

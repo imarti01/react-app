@@ -1,9 +1,8 @@
-@import "../../../../scss/theme/variables.scss";
+@import "../../../../scss/theme/variables";
+@import "../../../../scss/styles/mixins";
 
 .main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexColCenter();
     width: 100%;
 
 }

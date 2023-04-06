@@ -8,3 +8,23 @@
         cursor: pointer;
     }
 }
+
+@mixin resetStyleslink () {
+    a:link, a:visited, a:active {
+        text-decoration: none;
+    }
+}
+
+@mixin flexColCenter ($justify: flex-start) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: $justify;
+}
+
+@mixin flexRowCenter ($justify: space-between) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: $justify;
+}

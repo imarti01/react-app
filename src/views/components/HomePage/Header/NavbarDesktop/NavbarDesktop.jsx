@@ -1,8 +1,9 @@
 import { ListElement } from "../ListElement/ListElement";
+import "./NavbarDesktop.scss";
 
 export const NavbarDesktop = () => {
   return (
-    <nav>
+    <nav className="navbar-desktop">
       <ul>
         <ListElement link="/allRecipes" text="All Recipes" />
         <ListElement link="/vegan" text="Vegan" />

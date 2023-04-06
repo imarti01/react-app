@@ -1,14 +1,32 @@
-@import "../../../../../scss/theme/variables.scss";
+@import "../../../../../scss/theme/variables";
+@import "../../../../../scss/theme/breakpoints";
+@import "../../../../../scss/styles/mixins";
 
 .navbar-media {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexRowCenter(center);
     height: 2rem;
     width: 100%;
     background-color: $nav-color;
-
-    &__link {
-        margin: 0rem 0.5rem;
+    @include md {
+        height: 2.5rem;
+        justify-content: space-between;
     }
+
+    &__search {
+        @include flexRowCenter();
+        width: 8.8rem;
+        padding: 0 1rem;
+        
+        &--text {
+            font-size: 0.7rem;
+        }
+    }
+    
+    &__links {
+        @include flexRowCenter();
+        width: 5rem;
+        padding: 0 1rem;
+    }
+
+
 }

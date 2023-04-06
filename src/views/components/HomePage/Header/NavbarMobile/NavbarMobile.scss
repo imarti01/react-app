@@ -1,9 +1,8 @@
-@import "../../../../../scss/theme/variables.scss";
+@import "../../../../../scss/theme/variables";
+@import "../../../../../scss/styles/mixins";
 
 .navbar-mobile {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flexRowCenter();
     width: 80%;
     height: 4rem;
     border-bottom: 1px solid $dark-color;

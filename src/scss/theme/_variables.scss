@@ -6,14 +6,13 @@ $secondary-font: 'Indie Flower', cursive;
 $main-font: 'Open Sans', sans-serif;
 
 //COLORS:
-// $bg-color: #F5F5F5;
-// $nav-color: #FED049;
-// $second-color: #68B984;
-// $third-color: #1A4D2E;
-// $dark-color: #062C30;
-
 $bg-color: #F4F6FF;
 $nav-color: #FFCB74;
 $second-color: #fa764b;
 $third-color: #4F8A8B;
 $dark-color: #062C30;
+
+//BREAKPOINTS:
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
