@@ -23,7 +23,7 @@
     }
 
     &__title {
-        margin: 3rem 0 1rem 0;
+        margin: 3rem 0 1rem;
         text-align: center;
         padding: 1rem;
 
@@ -138,7 +138,7 @@
 
         @include sm {
             width: 87.5%;
-            padding: 0rem 2rem 2rem 2rem;
+            padding: 0rem 2rem 2rem;
         }
 
         @include md {
