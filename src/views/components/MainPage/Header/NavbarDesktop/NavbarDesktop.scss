@@ -7,22 +7,29 @@
     width: 80%;
     height: 6.5rem;
     border-bottom: 1px solid $dark-color;
+    @include resetStyleslink($dark-color);
 
     &__group {
         @include flexRowCenter();
         @include resetStyleslink($dark-color);
-        width: 12rem;
+        width: 10rem;
         font-family: $secondary-font;
         list-style: none;
         font-size: 0.9rem;
 
+        &--active {
+            border: 2px solid $nav-color;
+            border-radius: 0.6rem;
+            padding: 0.5rem;
+        }
+
         @include lg {
-            width: 14rem;
+            width: 12rem;
             font-size: 1rem;
         }
 
         @include xl {
-            width: 16.5rem;
+            width: 13rem;
             font-size: 1.2rem;
         }
     }

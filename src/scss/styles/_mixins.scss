@@ -49,3 +49,16 @@
     align-items: center;
     justify-content: $justify;
 }
+
+@mixin imgBasicStyles ($width, $height) {
+    width:$width;
+    height: $height;
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 2px solid $nav-color;
+        
+    img {
+        height: $height;
+        filter: saturate(0.5);
+    }   
+}

@@ -1,9 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { GrPrevious, GrNext } from "react-icons/gr";
-
+import { RecipeCard } from "../../RecipeCard/RecipeCard";
+import { useScreenWidth } from "../../../../../hooks/useScreenWidth";
 import "./CarouselRecipes.scss";
-import { RecipeCard } from "../../MainPage/RecipeCard/RecipeCard";
-import { useScreenWidth } from "../../../../hooks/useScreenWidth";
 
 export const CarouselRecipes = ({ recipes }) => {
   const [widthImg, setWidthImg] = useState(0);

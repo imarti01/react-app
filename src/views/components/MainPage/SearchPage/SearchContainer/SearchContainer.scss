@@ -1,0 +1,54 @@
+@import "../../../../../scss/theme/variables";
+@import "../../../../../scss/theme/breakpoints";
+@import "../../../../../scss/styles/mixins";
+
+.search-container {
+    @include flexRowCenter(center);
+    @include inputSearchCancelBtn();
+    width: 100%;
+    height: 5rem;
+    margin: 1.5rem 0 1rem 0;
+
+    &__form {
+        width: 80%;
+        height: 2rem;
+        
+        @include sm {
+            width: 60%;
+        }
+
+        @include md {
+            width: 50%;
+        }
+
+        @include xl {
+            width: 40%;
+        }
+
+        &--input {
+            width: 100%;
+            height: 100%;
+            font-size: 0.8rem;
+        padding: 0 1.5rem 0 0.5rem;
+
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        right:12%;
+        cursor: pointer;
+
+        @include sm {
+            right: 21%;
+        }
+
+        @include md {
+            right: 26%;
+        }
+
+        @include xl {
+            right: 30.5%;
+        }
+    }
+}

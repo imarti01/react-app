@@ -2,8 +2,11 @@ import { createBrowserRouter } from "react-router-dom";
 import { MainPage, DashboardPage, ErrorPage, DetailPage } from "../views/pages";
 import {
   AllRecipesContainer,
+  FilteredRecipesContainer,
+  LayoutSearchPage,
   MainContainer,
 } from "../views/components/MainPage";
+import { ProtectedRoute } from "./ProtectedRoute";
 
 export const router = createBrowserRouter([
   {
@@ -15,21 +18,24 @@ export const router = createBrowserRouter([
         element: <MainContainer />,
       },
       {
-        path: "allRecipes",
-        element: <AllRecipesContainer />,
+        path: "/allRecipes",
+        element: <LayoutSearchPage />,
+        children: [
+          {
+            path: "/allRecipes",
+            element: (
+              <ProtectedRoute>
+                {" "}
+                <AllRecipesContainer />{" "}
+              </ProtectedRoute>
+            ),
+          },
+          {
+            path: "/allRecipes/:filtered",
+            element: <FilteredRecipesContainer />,
+          },
+        ],
       },
-      {
-        path: "allRecipes/:filter",
-        // element: < />,
-      },
-      // {
-      //   path: "likelibrary",
-      //   element: <ContainerLikeLibrary />,
-      // },
-      // {
-      //   path: "nowplaying",
-      //   element: <NowPlaying />,
-      // },
     ],
   },
   {
@@ -37,7 +43,7 @@ export const router = createBrowserRouter([
     element: <DashboardPage />,
   },
   {
-    path: "/detail",
+    path: "/detail/:recipeId",
     element: <DetailPage />,
   },
   {

@@ -1,0 +1,31 @@
+@import "../../../../../scss/theme/variables";
+@import "../../../../../scss/theme/breakpoints";
+@import "../../../../../scss/styles/mixins";
+
+.allrecipes-container {
+    @include flexColCenter();
+    width: 100%;
+    padding: 1rem 10%;
+
+    @include sm {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    &__card {
+        @include flexColCenter();
+        text-align: center;
+        width: 17rem;
+        height: 22rem;
+        margin: 0 0.5rem;
+
+        div {
+            @include imgBasicStyles(17rem, 17rem);
+        }
+        
+        h4 {
+            margin-top: 0.5rem;
+        }
+    }
+}

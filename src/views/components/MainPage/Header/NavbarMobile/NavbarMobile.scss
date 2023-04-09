@@ -6,6 +6,43 @@
     width: 80%;
     height: 4rem;
     border-bottom: 1px solid $dark-color;
+    @include resetStyleslink($dark-color);
+
+    &__icon {
+        cursor: pointer;
+    }
+
+    &__menu {
+        display: none;
+        
+        &--active {
+            display: block;
+            position: absolute;
+            top: 6.7rem;
+            list-style: none;
+            background-color: $nav-color;
+            z-index: 3;
+            width: 80%;
+            height: 10rem;
+            padding: 1rem;
+            border-bottom: 1px solid $dark-color;
+           
+
+            li {
+                cursor: pointer;
+                padding: 0.33rem 0.5rem;
+            }
+            
+            &--li {
+                background-color: $dark-color;
+                border-radius: 0.5rem;
+                a{
+                    color: $nav-color;
+                }
+            }
+        }
+
+    }
 
     &__title {
         font-family: $logo-font;

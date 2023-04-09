@@ -1,0 +1,8 @@
+@import "../../../../../scss/theme/variables";
+@import "../../../../../scss/styles/mixins";
+
+.main-container {
+    @include flexColCenter();
+    width: 100%;
+
+}

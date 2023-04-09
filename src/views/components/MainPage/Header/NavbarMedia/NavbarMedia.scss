@@ -4,6 +4,7 @@
 
 .navbar-media {
     @include flexRowCenter(center);
+    @include resetStyleslink($dark-color);
     height: 2.7rem;
     width: 100%;
     background-color: $nav-color;
