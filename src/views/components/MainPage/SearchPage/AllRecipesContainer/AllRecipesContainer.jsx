@@ -1,4 +1,3 @@
-import { SearchContainer } from "../SearchContainer/SearchContainer";
 import { RecipeCard } from "../../HomePage";
 
 import "./AllRecipesContainer.scss";
@@ -6,8 +5,7 @@ import { useContext } from "react";
 import { RecipesContext } from "../../../../../context/RecipesContext";
 
 export const AllRecipesContainer = () => {
-  const { recipesState } = useContext(RecipesContext);
-  const { recipes } = recipesState;
+  const { recipes } = useContext(RecipesContext);
 
   return (
     <div className="allrecipes-container">

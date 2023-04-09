@@ -1,11 +1,10 @@
-import { useEffect, useState } from "react";
-import { SearchContainer } from "../SearchContainer/SearchContainer";
+import { useEffect } from "react";
 import { RecipeCard } from "../../HomePage";
-
-import "../AllRecipesContainer/AllRecipesContainer.scss";
 import { useParams } from "react-router-dom";
 import { getRecipesByDiet } from "../../../../../api/utils";
 import { useQuery } from "react-query";
+
+import "../AllRecipesContainer/AllRecipesContainer.scss";
 
 export const FilteredRecipesContainer = () => {
   const { filtered } = useParams();

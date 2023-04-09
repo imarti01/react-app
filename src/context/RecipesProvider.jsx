@@ -1,23 +1,17 @@
-import { useReducer } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { RecipesContext } from "./RecipesContext";
-import { recipesReducer } from "./recipesReducer";
-import { types } from "./types/types";
-
-const initialState = {
-  recipes: [],
-  savedRecipes: [],
-};
+import { getRandomRecipes } from "../api/utils";
 
 export const RecipesProvider = ({ children }) => {
-  const [recipesState, dispatch] = useReducer(recipesReducer, initialState);
+  const [recipes, setRecipes] = useState([]);
 
-  const storeRecipes = (recipes) => {
-    dispatch({ type: types.SAVE_INSPIRE_RECIPES, payload: recipes });
-  };
+  useEffect(() => {
+    getRandomRecipes().then((data) => setRecipes(data.data.recipes));
+  }, []);
+
+  const value = useMemo(() => ({ recipes }), [recipes]);
 
   return (
-    <RecipesContext.Provider value={{ recipesState, storeRecipes }}>
-      {children}
-    </RecipesContext.Provider>
+    <RecipesContext.Provider value={value}>{children}</RecipesContext.Provider>
   );
 };

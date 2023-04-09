@@ -70,8 +70,8 @@ export const ContainerDetailPage = () => {
             <h3 className="container-detail-page__instructions-section--title">
               INSTRUCTIONS
             </h3>
-            {data.data.analyzedInstructions[0].steps.map((step, idx) => (
-              <p key={step + idx}>{step.step}</p>
+            {data.data.analyzedInstructions[0].steps.map((step) => (
+              <p key={step.number}>{step.step}</p>
             ))}
           </section>
         </>
