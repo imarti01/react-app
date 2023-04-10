@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
-import { CarouselRecipes } from "../CarouselRecipes/CarouselRecipes";
-
-import "./ExploreRecipes.scss";
 import { useQuery } from "react-query";
 import { getRecipesByCuisine } from "../../../../../api/utils";
 import { RecipeCard } from "../../RecipeCard/RecipeCard";
+
+import "./ExploreRecipes.scss";
 
 export const ExploreRecipes = () => {
   const cuisineArr = [
