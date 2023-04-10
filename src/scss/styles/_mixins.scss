@@ -70,7 +70,6 @@
 }
 
 @mixin buttonBasicStyles () {
-    border:none;
     border-radius: 0.4rem;
     background-color: $nav-color;
     cursor: pointer; 
