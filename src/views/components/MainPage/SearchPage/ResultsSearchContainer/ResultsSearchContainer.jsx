@@ -1,4 +1,4 @@
-import { RecipeCard } from "../../HomePage";
+import { RecipeCard } from "../../RecipeCard/RecipeCard";
 
 export const ResultsSearchContainer = ({ searchResults }) => {
   return (

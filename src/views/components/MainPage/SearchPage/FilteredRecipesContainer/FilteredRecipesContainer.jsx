@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { RecipeCard } from "../../HomePage";
+import { RecipeCard } from "../../RecipeCard/RecipeCard";
 import { useParams } from "react-router-dom";
 import { getRecipesByDiet } from "../../../../../api/utils";
 import { useQuery } from "react-query";
@@ -10,7 +10,7 @@ export const FilteredRecipesContainer = () => {
   const { filtered } = useParams();
 
   const { isLoading, error, data, refetch } = useQuery({
-    queryKey: ["diet"],
+    queryKey: [filtered],
     queryFn: () => getRecipesByDiet(filtered),
   });
 

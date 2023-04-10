@@ -1,8 +1,7 @@
-import { RecipeCard } from "../../HomePage";
-
 import "./AllRecipesContainer.scss";
 import { useContext } from "react";
 import { RecipesContext } from "../../../../../context/RecipesContext";
+import { RecipeCard } from "../../RecipeCard/RecipeCard";
 
 export const AllRecipesContainer = () => {
   const { recipes } = useContext(RecipesContext);

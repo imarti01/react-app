@@ -5,6 +5,8 @@ export * from "./Header/NavbarMedia/NavbarMedia";
 export * from "./Header/NavbarMobile/NavbarMobile";
 export * from "./Header";
 export * from "./HomePage/CarouselRecipes/CarouselRecipes";
+export * from "./HomePage/ChocolateContainer/ChocolateContainer";
+export * from "./HomePage/ExploreRecipes/ExploreRecipes";
 export * from "./HomePage/InspireContainer/InspireContainer";
 export * from "./HomePage/MainContainer/MainContainer";
 export * from "./HomePage";

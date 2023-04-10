@@ -62,3 +62,48 @@
         filter: saturate(0.5);
     }   
 }
+
+@mixin boxShadow () {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+                7px 7px 20px 0px rgba(0,0,0,.1),
+                4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
+@mixin buttonBasicStyles () {
+    border:none;
+    border-radius: 0.4rem;
+    background-color: $nav-color;
+    cursor: pointer; 
+    color: $dark-color;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    outline: none;
+    border: 1px solid $nav-color;
+    @include boxShadow();
+
+    &:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 0;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 0.4rem;
+        background-color: $bg-color;
+        opacity: 0.2;
+        transition: all 0.3s ease;
+    }
+
+    &:hover:after {
+        top: auto;
+        bottom: 0;
+        height: 100%;
+      }
+      &:active {
+        top: 2px;
+      }
+}
+

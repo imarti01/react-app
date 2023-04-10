@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { MainPage, DashboardPage, ErrorPage, DetailPage } from "../views/pages";
+import { MainPage, ErrorPage, DetailPage } from "../views/pages";
 import {
   AllRecipesContainer,
   FilteredRecipesContainer,
@@ -37,10 +37,6 @@ export const router = createBrowserRouter([
         ],
       },
     ],
-  },
-  {
-    path: "/dashboard",
-    element: <DashboardPage />,
   },
   {
     path: "/detail/:recipeId",

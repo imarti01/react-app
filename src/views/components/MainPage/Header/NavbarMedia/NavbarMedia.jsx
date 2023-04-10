@@ -16,8 +16,20 @@ export const NavbarMedia = () => {
         </Link>
       )}
       <div className="navbar-media__links">
-        <BsLinkedin />
-        <BsGithub />
+        <a
+          href="https://github.com/imarti01"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <BsGithub />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/isaura-mart%C3%AD-teixid%C3%B3-488737225/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <BsLinkedin />
+        </a>
       </div>
     </nav>
   );

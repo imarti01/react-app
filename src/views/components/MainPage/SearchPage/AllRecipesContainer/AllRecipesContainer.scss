@@ -22,6 +22,8 @@
 
         div {
             @include imgBasicStyles(17rem, 17rem);
+            cursor: pointer;
+            @include boxShadow();
         }
         
         h4 {

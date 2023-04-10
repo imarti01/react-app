@@ -58,7 +58,8 @@
                 cursor: pointer;
 
                 div {
-                    @include imgBasicStyles(100%, 30rem)
+                    @include imgBasicStyles(100%, 30rem);
+                    @include boxShadow();
                 }
                 
                 h4 {

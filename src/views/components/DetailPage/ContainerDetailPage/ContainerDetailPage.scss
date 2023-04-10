@@ -11,40 +11,54 @@
         text-align: center;
     }
 
-    &__back {
-        position: absolute;
-        left: 0.7rem;
-        top: 0.6rem;
-        font-size: 2rem;
-        color: $nav-color;
-        background-color: $dark-color;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    &__title {
-        margin: 3rem 0 1rem;
-        text-align: center;
-        padding: 1rem;
+    &__title-section {
+        @include flexColCenter();
+        width: 100%;
+        padding: 1.1rem;
 
         @include sm {
-            font-size: 1.7rem;
+            width: 87.5%;
+            padding: 2rem;
         }
 
         @include md {
-            font-size: 1.9rem;
+            width: 80%;
         }
 
-        @include xl {
-            font-size: 2.1rem;
+        @include lg {
+            width: 60%
         }
+
+        &--back {
+            position: absolute;
+            left: 0.7rem;
+            top: 0.6rem;
+            font-size: 2rem;
+            color: $nav-color;
+            background-color: $dark-color;
+            border-radius: 50%;
+            cursor: pointer;
+            @include boxShadow();
+        }
+
+        &--title {
+            margin: 3rem 0 1rem;
+            text-align: center;
+            background-color: $nav-color;
+            border-radius: 1rem;
+            width: 100%;
+            padding: 1rem;
+            @include boxShadow();
+        }
+
     }
 
     &__picture-section {
         @include flexColCenter();
         width: 100%;
         &--img {
-            @include imgBasicStyles(17rem, 17rem)
+            @include imgBasicStyles(17rem, 17rem);
+            @include boxShadow();
         }
 
         @include sm {
@@ -125,6 +139,7 @@
             background-color: $nav-color;
             padding: 0.2rem 1rem;
             border-radius: 0.6rem;
+            @include boxShadow();
         }
         
         &--ul {
@@ -154,6 +169,7 @@
             background-color: $nav-color;
             padding: 0.2rem 1rem;
             border-radius: 0.6rem;
+            @include boxShadow();
         }
         
         p {

@@ -10,7 +10,7 @@ export const InspireContainer = () => {
   const { recipes } = useContext(RecipesContext);
 
   return (
-    <div className="inspire-container">
+    <section className="inspire-container">
       <h5 className="inspire-container__text">
         Unlock the Flavors of Your Kitchen
       </h5>
@@ -21,6 +21,6 @@ export const InspireContainer = () => {
           SHOW ME EVERYTHING <IoMdArrowRoundForward />
         </Link>
       </>
-    </div>
+    </section>
   );
 };
