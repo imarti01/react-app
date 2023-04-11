@@ -1,0 +1,13 @@
+@import "../../../scss/styles/mixins.scss";
+.error-page {
+    @include flexColCenter(center);
+    height: 100vh;
+
+    h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+}
