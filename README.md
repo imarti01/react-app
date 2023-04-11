@@ -21,6 +21,7 @@ Other libraries used are:
 - [Getting Started](#getting-started)
 - [About The Project](#About-the-project)
 - [Author](#author)
+- [Site Deployment](#Site-Deployment)
 
 ## Getting Started
 
@@ -63,3 +64,7 @@ The API is limited to only 150 calls/day.
 ## Author
 
 - **[Isaura Martí](https://github.com/imarti01)**
+
+## Site Deployment
+
+- **[Visit the site](https://main--meek-crostata-64b0b7.netlify.app/)**
