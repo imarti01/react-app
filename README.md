@@ -20,9 +20,9 @@ Other libraries used are:
 
 - [Getting Started](#getting-started)
 - [About The Project](#About-the-project)
+- [Code Quality](#Code-Quality)
 - [Author](#author)
 - [Site Deployment](#Site-Deployment)
-- [Code Quality](#Code-Quality)
 
 ## Getting Started
 
