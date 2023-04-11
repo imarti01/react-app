@@ -5,16 +5,18 @@ import { useScreenWidth } from "../../../../../hooks/useScreenWidth";
 import "./CarouselRecipes.scss";
 
 export const CarouselRecipes = ({ recipes }) => {
-  const [widthImg, setWidthImg] = useState(0);
+  const [widthImg, setWidthImg] = useState();
   const screenWidth = useScreenWidth();
   const carousel = useRef(null);
   const listEl = useRef(null);
 
   useEffect(() => {
-    const li = listEl.current;
-    if (li) {
-      setWidthImg(li.getBoundingClientRect().width);
-    }
+    setTimeout(() => {
+      const li = listEl.current;
+      if (li) {
+        setWidthImg(li.getBoundingClientRect().width);
+      }
+    }, 2000);
   }, [screenWidth]);
 
   const prevRecipe = () => {
@@ -28,7 +30,7 @@ export const CarouselRecipes = ({ recipes }) => {
   return (
     <div className="carousel-recipes">
       <GrPrevious onClick={prevRecipe} className="carousel-recipes__arrow" />
-      <ul ref={carousel} className="carousel-recipes__container-cards">
+      <ul className="carousel-recipes__container-cards" ref={carousel}>
         {recipes.map((recipe) => (
           <li
             ref={listEl}
