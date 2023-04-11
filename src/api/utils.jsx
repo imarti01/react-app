@@ -1,7 +1,6 @@
 import axios from "axios";
 
 const API_KEY = import.meta.env.VITE_REACT_APP_API_KEY;
-const API_KEY2 = import.meta.env.VITE_REACT_APP_API_KEY2;
 
 const API_URL = "https://api.spoonacular.com/recipes";
 
@@ -17,7 +16,7 @@ export const getRecipesByDiet = async (diet) => {
 
 export const getRecipesByIngredients = async (ingredient) => {
   return await axios.get(
-    `${API_URL}/findByIngredients?number=12&apiKey=${API_KEY2}&ingredients=${ingredient}`
+    `${API_URL}/findByIngredients?number=12&apiKey=${API_KEY}&ingredients=${ingredient}`
   );
 };
 
