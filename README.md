@@ -22,6 +22,7 @@ Other libraries used are:
 - [About The Project](#About-the-project)
 - [Author](#author)
 - [Site Deployment](#Site-Deployment)
+- [Code Quality](#Code-Quality)
 
 ## Getting Started
 
@@ -57,9 +58,23 @@ The API is limited to only 150 calls/day.
 - See the details of a specific recipe, including ingredients and instructions.
 - Easy to use and very intuitive.
 
+### Folder distribution
+
+- api: API calling functions.
+- context: All recipes context.
+- hooks: Custom hook to calculate the width of the screen.
+- routes: files where routes are defined and protected.
+- scss: SCSS files that define application styles.
+- views: This folder is divided into two folders, one contains the pages and another contains the components that are rendered on those pages. Inside the component folder, these are also structured by folders by pages and within each folder there are usually two files, the component itself and an SCSS file to define the styles of this.
+
 ### Screenshots
 
-<!-- <img src='https://res.cloudinary.com/duokspzx0/image/upload/v1678717505/readme/screencapture-localhost-3000-store-2023-03-13-15_23_02_llzsvp.png' width='600'> -->
+<img src='https://res.cloudinary.com/duokspzx0/image/upload/v1681206830/recipes/screenshots_didvuc.png' width='600'>
+
+## Code Quality
+
+<img src='https://res.cloudinary.com/duokspzx0/image/upload/v1681206155/recipes/sonarcloudReview_o7fqau.png' width='600'>
+<img src='https://res.cloudinary.com/duokspzx0/image/upload/v1681206155/recipes/codefactorReview_z7d5m7.png' width='600'>
 
 ## Author
 
